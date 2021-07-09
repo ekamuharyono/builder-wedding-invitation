@@ -6,40 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./publik/assets/css/tailwind.css">
+  <link rel="stylesheet" href="./publik/assets/css/styles.css">
   
 </head>
 <body class="bg-white">
-  <!-- navbar -->
-  <nav class="container mx-8 x flex justify-between mt-5 items-center">
-    <div>
-      <img class="h-11" src="./publik/assets/img/logo-color.png" alt="logo">
+  <div class="container mx-auto">
+    <!-- navbar -->
+    <div class="navbar z-50 container fixed">
+      <nav class="flex justify-between pt-5 items-center absolute container">
+        <div>
+          <img class="h-11" src="./publik/assets/img/logo-color.png" alt="logo">
+        </div>
+        <div>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Home</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Fitur</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Tema</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Harga</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Portofolio</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Blog</a>
+          </button>
+          <button class="ml-1 py-3 px-4 font-semibold">
+            <a href="">Login</a>
+          </button>
+          <button class="py-3 px-4 shadow-sm bg-red-300 rounded-md ml-2 font-semibold text-white ">
+            <a href="">Buat Undangan</a>
+          </button>
+        </div>
+      </nav>
     </div>
-    <div>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Home</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Fitur</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Tema</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Harga</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Portofolio</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Blog</a>
-      </button>
-      <button class="ml-1 py-3 px-4 font-semibold">
-        <a href="">Login</a>
-      </button>
-      <button class="py-3 px-5 bg-red-300 rounded-md ml-2 font-semibold text-white ">
-        <a href="">Buat Undangan</a>
-      </button>
-    </div>
-  </nav>
+    <!-- end of navbar -->
+    <!-- home -->
+    <main class="mx-24">
+      <div id="home" class="grid grid-cols-12 gap-4 pt-48">
+        <div id="kiri" class="col-span-6">
+          <img class="absolute bulatan" src="./publik/assets/img/hero-shape-svg.svg" alt="hero-shape-svg">
+          <h1 class="font-bold font-sans text-7xl">Website<br>Undangan<br>Pernikahan<br>Online</h1>
+          <p class="mt-10 text-gray-600 text-lg font-semibold leading-loose">Undang orang-orang terdekat dalam momen kebahagiaan<br>pernikahan Anda dengan cara yang unik dan menarik menggunakan datengdong. Coba sekarang juga, GRATIS!<b class="font-bold block">Bukan . Sekedar . Gambar</b></p>
+          <button class="mt-8 bg-red-400 rounded w-48 h-14">
+            <a class="font-semibold text-white text-lg" href="#">Buat Sekarang</a>
+          </button>
+          <button class="mt-8 bg-indigo-600 rounded w-48 h-14 ml-1">
+            <a class="font-semibold text-white text-lg" href="#">Demo</a>
+          </button>
+        </div>
+        <div id="kanan" class="col-span-6 col-start-8">
+          <img class="w-max" src="./publik/assets/img/landing1-hero-phone.webp" alt="landing1-hero-phone">
+        </div>
+      </div>
+      <div id="features"></div>
+      <div id="themes"></div>
+      <div id="price"></div>
+    </main>
+  </div>
 </body>
 </html>
